@@ -1,0 +1,17 @@
+.footer{
+
+}
+.row{
+    display: flex;
+    text-align: center;
+}
+.col-12{
+    margin: 10px;
+    text-decoration: underline;
+}
+.footer_sns{
+    margin: 10px;
+}
+.fas{
+
+}  

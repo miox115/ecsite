@@ -1,0 +1,10 @@
+.nav{
+    background-color: wheat;
+    display: flex;
+    justify-content:space-between
+  }
+  
+  .nav_header{
+    display: flex;
+    padding:  0 10% 0;
+  }
