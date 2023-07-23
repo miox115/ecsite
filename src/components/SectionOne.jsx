@@ -1,20 +1,20 @@
 import React from 'react'
 
-
 const SectionOne = () => {
   return (
+      <section>
     <div className="container">
-      <div className="nav">
-        <a href="/">
-        <img src="https://dummyimage.com/100x50/000/fff" alt="ec_site"/>
-        </a>
-         <ul className="nav_header">
-           <li><a href="https://dummyimage.com/30x30/000/fff">test</a></li>
-           <li><a href="https://dummyimage.com/30x30/000/fff">test</a></li>
-           <li><a href="https://dummyimage.com/30x30/000/fff">test</a></li>
-         </ul>
+      <div className="row">
+        <div className="col-12">
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+        </div>
+        <a className="btn" href="#" >商品を見る</a>
       </div>
     </div>
+    </section>
   )
 }
 

@@ -6,6 +6,7 @@
     text-align: center;
 }
 .col-12{
+    display: flex;
     margin: 10px;
     text-decoration: underline;
 }

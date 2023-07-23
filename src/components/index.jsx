@@ -1,3 +1,5 @@
 export {default as HeaderComp} from './HeaderComp'
 export {default as FooterComp} from './FooterComp'
 export {default as SectionOne} from './SectionOne'
+export {default as SectionTwo} from './SectionTwo'
+export {default as SectionThree} from './SectionThree'
