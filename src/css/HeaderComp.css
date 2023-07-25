@@ -8,3 +8,9 @@
     display: flex;
     padding:  0 10% 0;
   }
+
+  .nav ul{
+    list-style: none;
+  }
+
+ 

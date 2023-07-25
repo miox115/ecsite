@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
-import { HeaderComp ,FooterComp, MainSection,} from './components';
+
+// import HomePage from './components/Home/Homepage';
+import ShopPage from './components/shop/Shoppage';
 
 function App() {
   return (
     <>
-      {<HeaderComp />}
-      {<MainSection />}      
-      {<FooterComp />}
+      {/* {<HomePage />}; */}
+      {<ShopPage />};
     </>
   );
-}
+};
 
 export default App;
