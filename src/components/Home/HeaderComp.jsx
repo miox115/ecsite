@@ -11,7 +11,7 @@ const HeaderComp = () => {
         </a>
         <ul className="nav_header">
           <li><a href="https://dummyimage.com/30x30/000/fff">スタート</a></li>
-          <li><a href="../Home/index.jsx">商品</a></li>
+          <li><a href="../Shop/ShopPage.jsx">商品</a></li>
           <li><a href="https://dummyimage.com/30x30/000/fff">？？</a></li>
           <li><a href="https://dummyimage.com/30x30/000/fff">マイページ</a></li>
           <li><a href="https://dummyimage.com/30x30/000/fff">カート</a></li>

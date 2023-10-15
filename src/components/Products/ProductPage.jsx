@@ -1,15 +1,15 @@
 import React from 'react'
 import { HeaderComp, FooterComp } from '../Home/index';
-import { MainShop } from './index';
+import { MainProduct } from './index';
 
-const ShopPage = () => {
+const ProductPage = () => {
     return (
         <>
                 {<HeaderComp />}
-                {<MainShop />}
+                {<MainProduct />}
                 {<FooterComp />}
         </>
     );
 }
 
-export default ShopPage;
+export default ProductPage;
