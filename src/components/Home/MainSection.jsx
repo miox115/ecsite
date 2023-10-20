@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../css/MainSection.module.css';
 
 const MainSection = () => {
   return (
@@ -7,12 +6,8 @@ const MainSection = () => {
     <div className="container">
       <section>
         <div className='slider-wrap'>
-          <button className='slick-prev' type='button'>
-            ::before
-          </button>
-
           <div className='slick-slide'>
-            <img src="https://dummyimage.com/250x/250/fff" alt="top" />
+            <img src="../../../public/img/macron.jpg" alt="top" />
           </div>
 
 
