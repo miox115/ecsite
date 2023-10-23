@@ -1,12 +1,13 @@
 import React from 'react'
-import {Header} from "../components/Header"
-import {Footer} from "../components/Footer"
+import { Header } from "../components/Header"
+import { Footer } from "../components/Footer"
 
 export const Product = () => {
   return (
-
     <div className="container">
-<Header/>
+
+      {/* <Header /> */}
+      
       <section>
         <div className='slider-wrap'>
           <button className='slick-prev' type='button'>
@@ -185,8 +186,9 @@ export const Product = () => {
           <a className="btn" href="#" >ラインナップを見る</a>
         </div>
       </section>
-      <Footer/>
-    </div >
 
+      {/* <Footer /> */}
+   
+    </div >
   )
 }

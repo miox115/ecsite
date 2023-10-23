@@ -4,9 +4,10 @@ import { Footer } from "../components/Footer"
 
 export const Home = () => {
   return (
-
     <div className="container">
-      <Header />
+
+      {/* <Header /> */}
+
       <section>
         <div className='slider-wrap'>
           <div className='slick-slide'>
@@ -181,7 +182,8 @@ export const Home = () => {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
+
     </div >
 
   )

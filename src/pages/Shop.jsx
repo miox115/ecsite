@@ -5,9 +5,10 @@ import {Footer} from "../components/Footer"
 
 export const Shop = () => {
   return (
-
     <div className="container">
-      <Header />
+      
+      {/* <Header /> */}
+      
       <section>
         <div className="row">
           <div className="col-12">
@@ -116,8 +117,8 @@ export const Shop = () => {
         </div>
       </section>
 
-      <Footer />
-      
+      {/* <Footer /> */}
+
     </div >
 
   )
