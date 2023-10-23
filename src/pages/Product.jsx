@@ -7,7 +7,7 @@ export const Product = () => {
     <div className="container">
 
       <Header />
-      
+
       <section>
         <div className='slider-wrap'>
           <button className='slick-prev' type='button'>
@@ -188,7 +188,7 @@ export const Product = () => {
       </section>
 
       <Footer />
-   
+
     </div >
   )
 }

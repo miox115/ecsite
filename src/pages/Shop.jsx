@@ -1,14 +1,14 @@
 import React from 'react'
-import {Header} from "../components/Header"
-import {News} from "../components/News"
-import {Footer} from "../components/Footer"
+import { Header } from "../components/Header"
+import { News } from "../components/News"
+import { Footer } from "../components/Footer"
 
 export const Shop = () => {
   return (
     <div className="container">
-      
+
       <Header />
-      
+
       <section>
         <div className="row">
           <div className="col-12">
