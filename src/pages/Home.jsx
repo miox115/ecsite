@@ -1,5 +1,8 @@
 import React from 'react'
 import { Header } from "../components/Header"
+import { Information } from "../components/Information"
+import { News } from "../components/News"
+import { Sns } from "../components/Sns"
 import { Footer } from "../components/Footer"
 
 export const Home = () => {
@@ -10,181 +13,107 @@ export const Home = () => {
 
       <section>
         <div className='slider-wrap'>
-          <div className='slick-slide'>
-            <img src="../../../public/img/macron.jpg" alt="top" />
-          </div>
-
-
-          <button className='slick-next' type='button'>
-            ::before
-          </button>
-
+          <img src="../../../public/img/macron.jpg" alt="画像入れる" />
+          <button type='button'>ボタン入れる</button>
         </div>
       </section>
 
       <section>
-        <div className="row">
+        <div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+        </div>
+        <a className="btn" href="#">ボタン入れる</a>
+      </section>
+
+      <Information />
+
+      <section>
+        <div>
+          <p>TV放映中</p>
           <div className="col-12">
-            <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-            <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-            <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-            <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-          </div>
-        </div>
-        <div className="col-12">
-          <a className="btn" href="#">商品を見る</a>
-        </div>
-      </section>
-
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <p>TV放映中</p>
-            </div>
-            <div className="col-12">
-              <iframe src="https://dummyimage.com/200x/200/fff" frameborder="0"><img src="https://dummyimage.com/200x/200/fff" alt="" /></iframe>
-            </div>
+            <iframe src="https://dummyimage.com/200x/200/fff" frameborder="0"><img src="https://dummyimage.com/200x/200/fff" alt="" /></iframe>
           </div>
         </div>
       </section>
 
       <section>
         <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>大切なものが入っています</h1>
-            </div>
+          <h1>大切なものが入っています</h1>
+          <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
+          <div className="col-12">
+            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
+            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
+            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
           </div>
-
-          <div className="row">
-            <div className="col-12">
-              <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
-              <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
-              <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
-            </div>
-          </div>
-
-          <div className="row">
-            <p>※売上ランキングで登場</p>
-          </div>
-
-          <div className="row">
-
-          </div>
-          <a className="btn" href="#" >体験する</a>
+          <p>※売上ランキングで登場</p>
+          <a className="btn" href="#">ボタン入れる</a>
         </div>
       </section>
 
       <section>
-        <div className="row">
-          <div className="col-12">
-            <h2>XXにはそれぞれに必要な栄養素がぎゅっと詰まっています</h2>
-            <h3>栄養素の一覧表</h3>
-            <p>1日あたりの摂取量</p>
-          </div>
+        <div>
+          <h3>栄養素の一覧表</h3>
+          <p>1日あたりの摂取量</p>
+          <h2>XXにはそれぞれに必要な栄養素がぎゅっと詰まっています</h2>
         </div>
-        <div className="col-12">
-          <picture>
-            <img src="https://dummyimage.com/200/400/fff" alt="" />
-            <p>測定値</p>
-          </picture>
+
+        <div>
+          <img src="https://dummyimage.com/200/400/fff" alt="" />
+          <p>測定値</p>
           <p>基準値は1日分の基準値を100とした時の数値です</p>
         </div>
-        <div className="col-12">
-          <picture>
+
+        <div>
+          <img src="https://dummyimage.com/50/50/fff" alt="" />
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div>
+            <h2>NEWS</h2>
+            <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
+          </div>
+
+          <News />
+
+
+          <div>
+            <a className="btn" href="#" >ニースを読む</a>
             <img src="https://dummyimage.com/50/50/fff" alt="" />
-          </picture>
+          </div>
+
         </div>
       </section>
 
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h2>NEWS</h2>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <dl>
-                <dt><span>2023/7/18</span><span className="btn" href="#">お知らせ</span></dt>
-                <dd><a href="#">開発中の商品を販売中！</a></dd>
-              </dl>
-              <dl>
-                <dt><span>2023/6/25</span><span className="btn" href="#">プレリリース</span></dt>
-                <dd><a href="#">イベントの開催が決定！</a></dd>
-              </dl>
-              <dl>
-                <dt><span>2023/5/20</span><span className="btn" href="#">プレリリース</span></dt>
-                <dd><a href="#">人気急上昇のあの商品を通販で販売決定！</a></dd>
-              </dl>
-              <dl>
-                <dt><span>2023/4/7</span><span className="btn" href="#">お知らせ</span></dt>
-                <dd><a href="#">休暇いたします！</a></dd>
-              </dl>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12">
-              <a className="btn" href="#" >ニースを読む</a>
-            </div>
-          </div>
-          <div className="col-12">
-            <picture>
-              <img src="https://dummyimage.com/50/50/fff" alt="" />
-            </picture>
-          </div>
-        </div>
-      </section>
+      <Sns />
 
       <section>
         <div className="row">
-          <div className="col-12">
-            <h2>推奨されています</h2>
-          </div>
+          <h2>推奨されています</h2>
+          <picture><img src="https://dummyimage.com/100/100/fff" alt="" /></picture>
         </div>
 
-        <div className='row'>
-          <div className='col-6'>
-            <picture><img src="https://dummyimage.com/100/100/fff" alt="" /></picture>
-          </div>
-          <div className='col-6'>
-            <p>教授推奨</p>
-            <p>博士課程終了。各種出版</p>
-          </div>
+        <div className='col-6'>
+          <p>教授推奨</p>
+          <p>博士課程終了。各種出版</p>
         </div>
+        <a className="btn" href="#">ボタン入れる</a>
       </section>
 
       <section>
-        <div className="row">
-          <a className="btn" href="#" >ラインナップを見る</a>
-        </div>
+        <a className="btn" href="#" >ボタンを入れる</a>
+      </section>
+
+      <section>
+        <p>説明書きをする</p>
       </section>
 
       <Footer />
 
     </div >
-
   )
 }
