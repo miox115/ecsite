@@ -7,7 +7,7 @@ export const Shop = () => {
   return (
     <div className="container">
       
-      {/* <Header /> */}
+      <Header />
       
       <section>
         <div className="row">
@@ -117,7 +117,7 @@ export const Shop = () => {
         </div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div >
 

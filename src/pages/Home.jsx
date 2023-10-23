@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="container">
 
-      {/* <Header /> */}
+      <Header />
 
       <section>
         <div className='slider-wrap'>
@@ -182,7 +182,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div >
 

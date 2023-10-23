@@ -1,16 +1,16 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-export const HeaderComp = () => {
-
+export const Header = () => {
   return (
-    <div className="container">
-      <div className="nav">
+    <>
+      <section>
         <ul class="flex">
-          <li><a href="/">ホーム</a></li>
-          <li><a href="/Product">商品</a></li>
-          <li><a href="/Shop">ショップ</a></li>
+          <li><Link to="/">ホーム</Link></li>
+          <li><Link to="/Product">商品</Link></li>
+          <li><Link to="/Shop">ショップ</Link></li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </>
   )
 }
