@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
-      <div className="nav">
+      <header>
         <ul class="flex">
           <li><Link to="/">ホーム</Link></li>
           <li><Link to="/Product">商品</Link></li>
           <li><Link to="/Shop">ショップ</Link></li>
         </ul>
-      </div>
+      </header>
     </>
   )
 }
