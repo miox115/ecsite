@@ -7,7 +7,7 @@ export const Header = () => {
       <header>
         <ul class="flex">
           <li><Link to="/">ホーム</Link></li>
-          <li><Link to="/Product">商品</Link></li>
+          <li><Link to="/Start">セット販売</Link></li>
           <li><Link to="/Shop">ショップ</Link></li>
         </ul>
       </header>
