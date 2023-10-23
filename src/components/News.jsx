@@ -1,6 +1,6 @@
 import React from 'react'
 
-const News = () => {
+export const News = () => {
   return (
     <>
       <div><p>News</p></div>
@@ -31,5 +31,3 @@ const News = () => {
     </>
   )
 }
-
-export default News

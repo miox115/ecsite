@@ -1,7 +1,7 @@
 import React from 'react'
 // import home from '../../../public/img/home.png'
 
-const HeaderComp = () => {
+export const HeaderComp = () => {
 
   return (
     <div className="container">
@@ -16,5 +16,3 @@ const HeaderComp = () => {
     </div>
   )
 }
-
-export default HeaderComp

@@ -1,13 +1,20 @@
 import React from 'react'
+import {Header} from "../components/Header"
+import {Footer} from "../components/Footer"
 
-const MainSection = () => {
+export const Product = () => {
   return (
 
     <div className="container">
+<Header/>
       <section>
         <div className='slider-wrap'>
+          <button className='slick-prev' type='button'>
+            ::before
+          </button>
+
           <div className='slick-slide'>
-            <img src="../../../public/img/macron.jpg" alt="top" />
+            <img src="https://dummyimage.com/250x/250/fff" alt="top" />
           </div>
 
 
@@ -120,6 +127,7 @@ const MainSection = () => {
             </div>
           </div>
 
+
           <div className="row">
             <div className="col-12">
               <dl>
@@ -177,10 +185,8 @@ const MainSection = () => {
           <a className="btn" href="#" >ラインナップを見る</a>
         </div>
       </section>
-
+      <Footer/>
     </div >
 
   )
 }
-
-export default MainSection
