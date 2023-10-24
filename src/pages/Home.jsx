@@ -7,113 +7,106 @@ import { Footer } from "../components/Footer"
 
 export const Home = () => {
   return (
-    <div className="container">
+    <>
 
       <Header />
 
-      <section>
-        <div className='slider-wrap'>
-          <img src="../../../public/img/macron.jpg" alt="画像入れる" />
-          <button type='button'>ボタン入れる</button>
+      <section class="flex justify-center">
+        <div class="text-center">
+          <img src="./img/macron.jpg" alt="" />
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Button
+          </button>
         </div>
       </section>
 
-      <section>
-        <div>
-          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
-          <div><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></div>
+      <section class="text-center">
+        <div class="p-2">
+          <div><img src="./img/macron.jpg" alt="" /></div>
+          <div><img src="./img/macron.jpg" alt="" /></div>
+          <div><img src="./img/macron.jpg" alt="" /></div>
+          <div><img src="./img/macron.jpg" alt="" /></div>
         </div>
-        <a className="btn" href="#">ボタン入れる</a>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Button
+        </button>
       </section>
 
       <Information />
 
       <section>
-        <div>
+        <div class="text-center">
           <p>TV放映中</p>
-          <div className="col-12">
-            <iframe src="https://dummyimage.com/200x/200/fff" frameborder="0"><img src="https://dummyimage.com/200x/200/fff" alt="" /></iframe>
+          <div>
+            <source src="./img/video.mp4" type="video/mp4" />
           </div>
         </div>
       </section>
 
       <section>
-        <div className="container">
+        <div class="text-center">
           <h1>大切なものが入っています</h1>
-          <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
-          <div className="col-12">
-            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
-            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
-            <a href="#"><picture><img src="https://dummyimage.com/50x/50/fff" alt="icon" /></picture></a>
+          <img src="https://dummyimage.com/250x/250/fff" alt="goods" />
+          <div class="flex">
+            <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
+            <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
+            <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
           </div>
           <p>※売上ランキングで登場</p>
-          <a className="btn" href="#">ボタン入れる</a>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Button
+          </button>
         </div>
       </section>
 
-      <section>
-        <div>
-          <h3>栄養素の一覧表</h3>
-          <p>1日あたりの摂取量</p>
-          <h2>XXにはそれぞれに必要な栄養素がぎゅっと詰まっています</h2>
-        </div>
+      <section class="text-center">
+        <h3>栄養素の一覧表</h3>
+        <p>1日あたりの摂取量</p>
+        <h2>XXにはそれぞれに必要な栄養素がぎゅっと詰まっています</h2>
+        <img src="https://dummyimage.com/200/400/fff" alt="" />
+        <p>測定値</p>
+        <p>基準値は1日分の基準値を100とした時の数値です</p>
+
+        <p>....</p>
+
+      </section>
+
+      <section class="text-center">
+        <h2>NEWS</h2>
+        <img src="https://dummyimage.com/250x/250/fff" alt="goods" />
+
+        <News />
 
         <div>
-          <img src="https://dummyimage.com/200/400/fff" alt="" />
-          <p>測定値</p>
-          <p>基準値は1日分の基準値を100とした時の数値です</p>
-        </div>
-
-        <div>
+          <a className="btn" href="#" >ニースを読む</a>
           <img src="https://dummyimage.com/50/50/fff" alt="" />
         </div>
-      </section>
 
-      <section>
-        <div>
-          <div>
-            <h2>NEWS</h2>
-            <a href="#"><picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture></a>
-          </div>
-
-          <News />
-
-
-          <div>
-            <a className="btn" href="#" >ニースを読む</a>
-            <img src="https://dummyimage.com/50/50/fff" alt="" />
-          </div>
-
-        </div>
       </section>
 
       <Sns />
 
-      <section>
-        <div className="row">
-          <h2>推奨されています</h2>
-          <picture><img src="https://dummyimage.com/100/100/fff" alt="" /></picture>
-        </div>
-
-        <div className='col-6'>
-          <p>教授推奨</p>
-          <p>博士課程終了。各種出版</p>
-        </div>
-        <a className="btn" href="#">ボタン入れる</a>
+      <section class="text-center">
+        <h2>推奨されています</h2>
+        <img src="https://dummyimage.com/100/100/fff" alt="" />
+        <p>教授推奨</p>
+        <p>博士課程終了。各種出版</p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Button
+        </button>
+        <section>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Button
+          </button>
+        </section>
       </section>
 
-      <section>
-        <a className="btn" href="#" >ボタンを入れる</a>
-      </section>
-
-      <section>
+      <section class="text-center">
         <p>説明書きをする</p>
       </section>
 
       <Footer />
 
-    </div >
+    </ >
   )
 }
