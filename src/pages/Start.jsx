@@ -16,12 +16,16 @@ export const Start = () => {
       <Header />
 
       <section>
-        <img src="#" alt="画像入れる" />
-        <button>ボタン</button>
-        <button>ボタン</button>
-        <p>コースの特典</p>
-        <p>説明書き</p>
-        <p>説明書き</p>
+        <img src="./img/macron.jpg" alt="画像入れる" />
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Button
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Button
+        </button>
+        <p class="flex justify-center">コースの特典</p>
+        <p class="flex justify-center">説明書き</p>
+        <p class="flex justify-center">説明書き</p>
       </section>
 
       <Information />
