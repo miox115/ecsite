@@ -30,7 +30,7 @@ export const Footer = () => {
             </div>
 
             <div>
-                <p>miox,inc</p>
+                <p class="flex justify-center">miox,inc</p>
             </div>
         </footer>
     )
