@@ -1,13 +1,13 @@
 import React from 'react'
-import { Header } from "../components/Header"
-import { Information } from '../components/Information'
-import { Set } from '../components/Set'
-import { Connection1 } from '../components/Connection1'
-import { Connection2 } from '../components/Connection2'
-import { Connection3 } from '../components/Connection3'
-import { Connection4 } from '../components/Connection4'
-import { Connection5 } from '../components/Connection5'
-import { Footer } from "../components/Footer"
+// import { Header } from "../components/Header"
+// import { Information } from '../components/Information'
+// import { Set } from '../components/Set'
+// import { Connection1 } from '../components/Connection1'
+// import { Connection2 } from '../components/Connection2'
+// import { Connection3 } from '../components/Connection3'
+// import { Connection4 } from '../components/Connection4'
+// import { Connection5 } from '../components/Connection5'
+// import { Footer } from "../components/Footer"
 
 export const Shop = () => {
   return (

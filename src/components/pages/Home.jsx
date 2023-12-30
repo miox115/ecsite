@@ -1,9 +1,9 @@
 import React from 'react'
-import { Header } from "../components/Header"
-import { Information } from "../components/Information"
-import { News } from "../components/News"
-import { Sns } from "../components/Sns"
-import { Footer } from "../components/Footer"
+// import { Header } from "../Header"
+// import { Information } from "../components/Information"
+// import { News } from "../components/News"
+// import { Sns } from "../components/Sns"
+// import { Footer } from "../components/Footer"
 
 export const Home = () => {
   return (

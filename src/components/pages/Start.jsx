@@ -1,13 +1,13 @@
 import React from 'react'
-import { Header } from "../components/Header"
-import { Information } from '../components/Information'
-import { Sns } from "../components/Sns"
-import { Manual1 } from '../components/Manual1'
-import { Manual2 } from '../components/Manual2'
-import { Manual3 } from '../components/Manual3'
-import { Question } from '../components/Question'
-import { Voice } from '../components/Voice'
-import { Footer } from "../components/Footer"
+// import { Header } from "../components/Header"
+// import { Information } from '../components/Information'
+// import { Sns } from "../components/Sns"
+// import { Manual1 } from '../components/Manual1'
+// import { Manual2 } from '../components/Manual2'
+// import { Manual3 } from '../components/Manual3'
+// import { Question } from '../components/Question'
+// import { Voice } from '../components/Voice'
+// import { Footer } from "../components/Footer"
 
 export const Start = () => {
   return (
