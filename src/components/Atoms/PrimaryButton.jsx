@@ -4,7 +4,7 @@ export const PrimaryButton = () => {
     return (
         <>
             <button
-                class="bg-blue-500
+                className="bg-blue-500
                     hover:bg-blue-700
                     text-white
                     font-bold

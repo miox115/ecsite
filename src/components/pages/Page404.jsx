@@ -12,15 +12,15 @@ export const Page404 = () => {
         sm:py-32 
         lg:px-8">
 
-        <div class="text-center">
-          <p class="text-base
+        <div className="text-center">
+          <p className="text-base
                   font-semibold
                   text-indigo-600">
             404
           </p>
 
           <h1
-            class="mt-4
+            className="mt-4
                 text-3xl
                 font-bold
                 tracking-tight

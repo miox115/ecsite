@@ -5,6 +5,7 @@ import { Information } from "../Organisms/Information"
 import { News } from "../Organisms/News"
 import { Sns } from "../Organisms/Sns"
 import { Footer } from "../Organisms/Footer"
+
 import { PrimaryButton } from '../Atoms/PrimaryButton'
 
 export const Home = () => {
@@ -13,21 +14,21 @@ export const Home = () => {
 
       <Header />
 
-      <section class="flex justify-center">
-        <div class="text-center">
+      <section className="flex justify-center">
+        <div className="text-center">
           <img src="./img/macron.jpg" alt="" />
           <PrimaryButton />
         </div>
       </section>
 
-      <section class="text-center">
-        <div class="p-2">
+      <section className="text-center">
+        <div className="p-2">
           <div><img src="./img/macron.jpg" alt="" /></div>
           <div><img src="./img/macron.jpg" alt="" /></div>
           <div><img src="./img/macron.jpg" alt="" /></div>
           <div><img src="./img/macron.jpg" alt="" /></div>
         </div>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Button
         </button>
       </section>
@@ -35,7 +36,7 @@ export const Home = () => {
       <Information />
 
       <section>
-        <div class="text-center">
+        <div className="text-center">
           <p>TV放映中</p>
           <div>
             <source src="./img/video.mp4" type="video/mp4" />
@@ -44,22 +45,22 @@ export const Home = () => {
       </section>
 
       <section>
-        <div class="text-center">
+        <div className="text-center">
           <h1>大切なものが入っています</h1>
           <img src="https://dummyimage.com/250x/250/fff" alt="goods" />
-          <div class="flex">
+          <div className="flex">
             <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
             <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
             <img src="https://dummyimage.com/50x/50/fff" alt="icon" />
           </div>
           <p>※売上ランキングで登場</p>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Button
           </button>
         </div>
       </section>
 
-      <section class="text-center">
+      <section className="text-center">
         <h3>栄養素の一覧表</h3>
         <p>1日あたりの摂取量</p>
         <h2>XXにはそれぞれに必要な栄養素がぎゅっと詰まっています</h2>
@@ -71,14 +72,14 @@ export const Home = () => {
 
       </section>
 
-      <section class="text-center">
+      <section className="text-center">
         <h2>NEWS</h2>
         <img src="https://dummyimage.com/250x/250/fff" alt="goods" />
 
         <News />
 
         <div>
-          <a className="btn" href="#" >ニースを読む</a>
+          <a classNameName="btn" href="#" >ニースを読む</a>
           <img src="https://dummyimage.com/50/50/fff" alt="" />
         </div>
 
@@ -86,22 +87,22 @@ export const Home = () => {
 
       <Sns />
 
-      <section class="text-center">
+      <section className="text-center">
         <h2>推奨されています</h2>
         <img src="https://dummyimage.com/100/100/fff" alt="" />
         <p>教授推奨</p>
         <p>博士課程終了。各種出版</p>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Button
         </button>
         <section>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Button
           </button>
         </section>
       </section>
 
-      <section class="text-center">
+      <section className="text-center">
         <p>説明書きをする</p>
       </section>
 
