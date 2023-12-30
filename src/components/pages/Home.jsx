@@ -1,9 +1,11 @@
 import React from 'react'
-// import { Header } from "../Header"
-// import { Information } from "../components/Information"
-// import { News } from "../components/News"
-// import { Sns } from "../components/Sns"
-// import { Footer } from "../components/Footer"
+
+import { Header } from "../Organisms/Header"
+import { Information } from "../Organisms/Information"
+import { News } from "../Organisms/News"
+import { Sns } from "../Organisms/Sns"
+import { Footer } from "../Organisms/Footer"
+import { PrimaryButton } from '../Atoms/PrimaryButton'
 
 export const Home = () => {
   return (
@@ -14,9 +16,7 @@ export const Home = () => {
       <section class="flex justify-center">
         <div class="text-center">
           <img src="./img/macron.jpg" alt="" />
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Button
-          </button>
+          <PrimaryButton />
         </div>
       </section>
 
