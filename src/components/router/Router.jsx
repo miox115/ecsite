@@ -1,6 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
+import { Home } from '../pages/Home'
+import { Start } from '../pages/Start'
+import { Shop } from '../pages/Shop'
+import { Page404 } from '../pages/Page404'
+
 export const Router = () => {
     return (
         <>
@@ -12,7 +17,6 @@ export const Router = () => {
                     <Route path="*" element={<Page404 />} />
                 </Routes>
             </BrowserRouter>
-
         </>
     )
 }
