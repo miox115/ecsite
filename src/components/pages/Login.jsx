@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PrimaryButton } from '../Atoms/PrimaryButton'
+import { PrimaryButton } from '../Atoms/Button/PrimaryButton'
 
 export const Login = () => {
   return (

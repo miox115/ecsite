@@ -6,7 +6,7 @@ import { News } from "../Organisms/News"
 import { Sns } from "../Organisms/Sns"
 import { Footer } from "../Organisms/Footer"
 
-import { PrimaryButton } from '../Atoms/PrimaryButton'
+import { PrimaryButton } from '../Atoms/Button/PrimaryButton'
 
 export const Home = () => {
   return (
