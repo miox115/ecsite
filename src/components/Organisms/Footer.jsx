@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa"
 
+import { RequestButton } from '../Atoms/Button/RequestButton'
+
 export const Footer = () => {
     return (
         <footer>
@@ -14,25 +16,19 @@ export const Footer = () => {
                     <h3 className="text-6xl"> <FaGithub /> </h3>
                     <h3 className="text-6xl"> <FaGithub /> </h3>
                 </div>
-                <div className="flex justify-center m-4">
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                        お問い合わせ
-                    </button>
-                </div>
+
+                <RequestButton className="m-4" />
+
                 <div classNama="m-4">
-                    <summary>
-                        <p>会社情報</p>
-                    </summary>
-                    <li className='footer_link'><a href="#">会社概要</a></li>
-                    <li className='footer_link'><a href="#">製造</a></li>
-                    <li className='footer_link'><a href="#">取材</a></li>
+                    <li><a href="#">会社情報</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">製造</a></li>
+                    <li><a href="#">取材</a></li>
                 </div>
                 <div className="m-4">
-                    <summary>
-                        <p>ＩＲ</p>
-                    </summary>
-                    <li className='footer_link'><a href="#">トップ</a></li>
-                    <li className='footer_link'><a href="#">ニュース</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">トップ</a></li>
+                    <li><a href="#">ニュース</a></li>
                 </div>
             </div>
             <div className="m-4">

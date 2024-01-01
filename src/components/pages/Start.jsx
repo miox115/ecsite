@@ -9,6 +9,7 @@ import { Manual3 } from '../Organisms/Manual3'
 import { Question } from '../Organisms/Question'
 import { Voice } from '../Organisms/Voice'
 import { Footer } from "../Organisms/Footer"
+import { Manual } from '../Organisms/Manual'
 
 export const Start = () => {
   return (
@@ -16,18 +17,7 @@ export const Start = () => {
 
       <Header />
 
-      <section>
-        <img src="./img/macron.jpg" alt="画像入れる" />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Button
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Button
-        </button>
-        <p className="flex justify-center">コースの特典</p>
-        <p className="flex justify-center">説明書き</p>
-        <p className="flex justify-center">説明書き</p>
-      </section>
+      <Manual />
 
       <Information />
 
