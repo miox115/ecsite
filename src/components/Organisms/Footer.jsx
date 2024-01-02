@@ -6,7 +6,7 @@ import { RequestButton } from '../Atoms/Button/RequestButton'
 export const Footer = () => {
     return (
         <footer>
-            <div className="flex justify-center ">
+            <div className="flex justify-center m-4">
                 <div className="m-4">
                     <a href="#"><img src="https://dummyimage.com/30x30/000/fff" alt="miox" /></a>
                     <p>miox,inc.</p>

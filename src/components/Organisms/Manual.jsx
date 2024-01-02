@@ -5,7 +5,7 @@ import React from 'react'
 export const Manual = () => {
     return (
         <div>
-            <img src="./img/macron.jpg" alt="画像入れる" />
+            <img src="./img/macron.jpg" alt="" />
             {/* <PrimaryButton /> */}
             {/* <PrimaryButton /> */}
             <p className="flex justify-center">コースの特典</p>

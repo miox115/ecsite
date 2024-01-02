@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Noodles = () => {
+export const Noodle = () => {
     return (
         <div>
             <div className="col-12">
