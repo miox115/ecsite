@@ -17,7 +17,7 @@ export const Footer = () => {
                     <h3 className="text-6xl"> <FaGithub /> </h3>
                 </div>
 
-                <RequestButton className="m-4" />
+                <RequestButton className="m-4">ログイン</RequestButton>
 
                 <div classNama="m-4">
                     <li><a href="#">会社情報</a></li>

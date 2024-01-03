@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const RequestButton = () => {
+export const RequestButton = (props) => {
     return (
         <>
             <button
@@ -11,7 +9,7 @@ export const RequestButton = () => {
                            py-2
                            px-4
                            rounded">
-                お問い合わせ
+                {props.Children}
             </button>
         </>
     )

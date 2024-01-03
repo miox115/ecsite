@@ -1,5 +1,5 @@
 import React from 'react'
-import { PrimaryButton } from '../Atoms/Button/PrimaryButton'
+import { PrimaryButton } from '../../Atoms/Button/PrimaryButton'
 
 export const Support = () => {
     return (
