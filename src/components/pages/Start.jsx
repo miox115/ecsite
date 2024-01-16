@@ -19,7 +19,7 @@ export const Start = () => {
 
       <Information />
 
-      <div>
+      <div className='flex justify-center'>
         <picture><img src="https://dummyimage.com/250x/250/fff" alt="goods" /></picture>
       </div>
 
