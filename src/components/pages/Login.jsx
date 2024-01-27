@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-import { PrimaryButton } from '../Atoms/Button/PrimaryButton'
+import { PrimaryButton } from "../Atoms/Button/PrimaryButton";
 
 export const Login = () => {
   return (
@@ -20,7 +20,10 @@ export const Login = () => {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Email address
               </label>
               <div className="mt-2">
@@ -37,11 +40,17 @@ export const Login = () => {
 
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Password
                 </label>
                 <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <a
+                    href="#"
+                    className="font-semibold text-indigo-600 hover:text-indigo-500"
+                  >
                     Forgot password?
                   </a>
                 </div>
@@ -62,5 +71,5 @@ export const Login = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
