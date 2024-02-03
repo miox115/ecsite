@@ -4,12 +4,21 @@ export const Candy = () => {
   const products = [
     {
       id: 1,
-      name: "Basic Tee",
+      name: "Candy",
       href: "#",
-      imageSrc: "https://dummyimage.com/1200x200/000/fff",
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
-      color: "Black",
+      imageSrc: "https://dummyimage.com/400x500/000/fff",
+      imageAlt: "お菓子",
+      price: "￥１５０",
+      taste: "クリーム",
+    },
+    {
+      id: 2,
+      name: "Candy",
+      href: "#",
+      imageSrc: "https://dummyimage.com/400x500/000/fff",
+      imageAlt: "お菓子",
+      price: "￥１５０",
+      taste: "チョコ",
     },
     // More products...
   ];
@@ -19,10 +28,10 @@ export const Candy = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            Customers also purchased
+            菓
           </h2>
 
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -41,7 +50,7 @@ export const Candy = () => {
                       </a>
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">
-                      {product.color}
+                      {product.taste}
                     </p>
                   </div>
                   <p className="text-sm font-medium text-gray-900">
