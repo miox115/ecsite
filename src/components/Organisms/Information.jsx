@@ -7,7 +7,7 @@ export const Information = () => {
     <div className="text-center">
       <p>TV放映中</p>
       <div>
-        <ReactPlayer url={video} playing />
+        <ReactPlayer url={video} playing volume={0}/>
       </div>
     </div>
   );
