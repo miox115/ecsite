@@ -46,22 +46,71 @@
 
 ## 3.ディレクトリ構成
 
+コマンド　tree /F
+
 .
-├── .devcontainer
-
-│   └── devcontainer.json
-
-├── .env
-
-├── .github
-
-│   ├── action
-
-│   ├── release-drafter.yml
-
-│   └── workflows
-
-├── .gitignore
+│  App.js
+│  index.js
+│
+├─components
+│  ├─Atoms
+│  │  └─Button
+│  │          NewsButton.jsx
+│  │          PrimaryButton.jsx
+│  │          RequestButton.jsx
+│  │
+│  ├─Organisms
+│  │  │  Footer.jsx
+│  │  │  Header.jsx
+│  │  │  Information.jsx
+│  │  │  News.jsx
+│  │  │  Sns.jsx
+│  │  │
+│  │  ├─HomeLayout
+│  │  │      FirstPromote.jsx
+│  │  │      HomeMain.jsx
+│  │  │      SecondPromote.jsx
+│  │  │      Support.jsx
+│  │  │
+│  │  ├─ShopLayout
+│  │  │      Candy.jsx
+│  │  │      Dry.jsx
+│  │  │      Food.jsx
+│  │  │      Noodle.jsx
+│  │  │      SetList.jsx
+│  │  │      ShopList.jsx
+│  │  │
+│  │  └─StartLayout
+│  │          Manual.jsx
+│  │          Manual1.jsx
+│  │          Question.jsx
+│  │          Voice.jsx
+│  │
+│  ├─pages
+│  │      Home.jsx
+│  │      Login.jsx
+│  │      Page404.jsx
+│  │      Set.jsx
+│  │      Shop.jsx
+│  │
+│  └─router
+│          Router.jsx
+│
+├─css
+│      input.css
+│      output.css
+│
+└─img
+    ├─img
+    │      macron.jpg
+    │      pexels-polina-tankilevitch-3872373.jpg
+    │      pexels-rdne-stock-project-7948029.jpg
+    │      pexels-rishi-raut-13616285.jpg
+    │      pexels-susanne-jutzeler-sujufoto-1132558.jpg
+    │      set.jpg
+    │
+    └─move
+            info_video.mp4
 
 ## 4.使い方
 
