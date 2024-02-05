@@ -3,11 +3,11 @@ import React from "react";
 import { Header } from "../Organisms/Header";
 import { Information } from "../Organisms/Information";
 import { Sns } from "../Organisms/Sns";
-import { Manual1 } from "../Organisms/StartLayout/Manual1";
-import { Question } from "../Organisms/StartLayout/Question";
-import { Voice } from "../Organisms/StartLayout/Voice";
+import { Manual1 } from "../Organisms/SetLayout/Manual1";
+import { Question } from "../Organisms/SetLayout/Question";
+import { Voice } from "../Organisms/SetLayout/Voice";
 import { Footer } from "../Organisms/Footer";
-import { Manual } from "../Organisms/StartLayout/Manual";
+import { Manual } from "../Organisms/SetLayout/Manual";
 
 export const Set = () => {
   return (
