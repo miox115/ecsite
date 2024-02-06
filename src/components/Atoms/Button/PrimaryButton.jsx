@@ -1,6 +1,7 @@
 import React from "react";
 
-export const PrimaryButton = () => {
+export const PrimaryButton = (props) => {
+  const { onClick } = props;
   return (
     <>
       <button
@@ -11,6 +12,7 @@ export const PrimaryButton = () => {
                     py-2
                     px-4
                     rounded"
+        onClick={onClick}
       >
         Button
       </button>
