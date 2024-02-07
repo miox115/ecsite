@@ -1,8 +1,15 @@
 import React from "react";
 
 import { PrimaryButton } from "../../Atoms/Button/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 export const FirstPromote = () => {
+  const navigate = useNavigate();
+
+  const onClickHandle = () => {
+    navigate("/Shop");
+  };
+
   return (
     <div className="text-center">
       <h1>大切なものが入っています</h1>
@@ -27,7 +34,7 @@ export const FirstPromote = () => {
         />
       </div>
       <p className="m-2">※売上ランキングで登場</p>
-      <PrimaryButton />
+      <PrimaryButton onClick={onClickHandle} />
     </div>
   );
 };

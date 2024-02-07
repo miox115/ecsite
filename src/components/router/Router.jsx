@@ -6,6 +6,7 @@ import { Set } from "../pages/Set";
 import { Shop } from "../pages/Shop";
 import { Page404 } from "../pages/Page404";
 import { Login } from "../pages/Login";
+import { Cart } from "../pages/Cart";
 
 export const Router = () => {
   return (
@@ -16,6 +17,7 @@ export const Router = () => {
           <Route path="/Set" element={<Set />} />
           <Route path="/Shop" element={<Shop />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Cart" element={<Cart />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
