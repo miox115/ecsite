@@ -10,13 +10,13 @@ export const Support = () => {
     navigate("/");
   };
   return (
-    <div className="text-center">
-      <h2>推奨されています</h2>
+    <div className="text-center m-4">
+      <h2 className="text-2xl">推奨されています</h2>
       <div className="flex justify-center m-2">
         <img src={Doctor} alt="Doctor" />
       </div>
-      <p>教授推奨</p>
-      <p>博士課程終了。各種出版</p>
+      <p className="text-sm p-4">教授推奨</p>
+      <p className="p-4">博士課程終了。各種出版</p>
       <PrimaryButton onClick={onClickHandle} />
     </div>
   );

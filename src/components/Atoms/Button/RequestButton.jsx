@@ -1,6 +1,6 @@
 export const RequestButton = (props) => {
   return (
-    <>
+    <div className="m-1">
       <button
         className="bg-blue-500
                            hover:bg-blue-700
@@ -12,6 +12,6 @@ export const RequestButton = (props) => {
       >
         {props.Children}
       </button>
-    </>
+    </div>
   );
 };

@@ -1,61 +1,61 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-
-import { RequestButton } from "../Atoms/Button/RequestButton";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { SiOdysee } from "react-icons/si";
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-neutral-400">
       <div className="flex justify-center m-4">
-        <div className="m-4">
-          <a href="#">
-            <img src="https://dummyimage.com/30x30/000/fff" alt="miox" />
-          </a>
-          <p>miox,inc.</p>
-        </div>
-        <div className="flex m-4">
-          <h3 className="text-6xl">
-            {" "}
-            <FaGithub />{" "}
-          </h3>
-          <h3 className="text-6xl">
-            {" "}
-            <FaGithub />{" "}
-          </h3>
-          <h3 className="text-6xl">
-            {" "}
-            <FaGithub />{" "}
-          </h3>
+        <div className="justify-center">
+          <div className="m-4">
+            <a href="#" className="text-5xl">
+              <SiOdysee />
+            </a>
+            <p className="text-xl">miox,inc.</p>
+          </div>
+          <div className="flex m-4">
+            <h3 className="p-2 text-5xl">
+              <FaXTwitter />
+            </h3>
+            <h3 className="p-2 text-5xl">
+              <FaInstagram />
+            </h3>
+            <h3 className="p-2 text-5xl">
+              <FaGithub />
+            </h3>
+          </div>
         </div>
 
-        <RequestButton className="m-4">ログイン</RequestButton>
-
-        <div classNama="m-4">
-          <li>
+        <div classNama="ml-8">
+          <li className="p-1 list-none">
             <a href="#">会社情報</a>
           </li>
-          <li>
+          <li className="p-1 list-none">
             <a href="#">会社概要</a>
           </li>
-          <li>
+          <li className="p-1 list-none">
             <a href="#">製造</a>
           </li>
-          <li>
+          <li className="p-1 list-none">
             <a href="#">取材</a>
           </li>
         </div>
-        <div className="m-4">
-          <li>
+
+        <div className="ml-8">
+          <li className="p-1 list-none">
             <a href="#">IR</a>
           </li>
-          <li>
+          <li className="p-1 list-none">
             <a href="#">トップ</a>
           </li>
-          <li>
+          <li className="p-1 list-none">
             <a href="#">ニュース</a>
           </li>
         </div>
       </div>
+
       <div className="m-4">
         <p className="flex justify-center">miox,inc</p>
       </div>

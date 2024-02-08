@@ -11,8 +11,8 @@ export const FirstPromote = () => {
   };
 
   return (
-    <div className="text-center">
-      <h1>大切なものが入っています</h1>
+    <div className="text-center bg-yellow-400">
+      <h1 className="py-8">大切なものが入っています</h1>
       <div className="flex justify-center m-2">
         <img src="https://dummyimage.com/250x/250/fff" alt="goods" />
       </div>
