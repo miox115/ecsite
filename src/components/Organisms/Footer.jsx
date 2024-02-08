@@ -6,12 +6,12 @@ import { SiOdysee } from "react-icons/si";
 
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-400">
+    <footer className="bg-neutral-400 py-4">
       <div className="flex justify-center m-4">
         <div className="justify-center">
-          <div className="m-4">
+          <div className="mx-4 text-center">
             <a href="#" className="text-5xl">
-              <SiOdysee />
+              <SiOdysee className="m-auto"/>
             </a>
             <p className="text-xl">miox,inc.</p>
           </div>
@@ -29,28 +29,28 @@ export const Footer = () => {
         </div>
 
         <div classNama="ml-8">
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">会社情報</a>
           </li>
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">会社概要</a>
           </li>
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">製造</a>
           </li>
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">取材</a>
           </li>
         </div>
 
         <div className="ml-8">
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">IR</a>
           </li>
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">トップ</a>
           </li>
-          <li className="p-1 list-none">
+          <li className="p-2 list-none">
             <a href="#">ニュース</a>
           </li>
         </div>
