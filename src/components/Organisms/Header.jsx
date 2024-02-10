@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
-      <ul className="flex justify-end m-4">
+      <ul className="flex justify-end m-4 font-bold text-gray-500 text-xl">
         <li>
           <Link to="/" className="m-2">
             ホーム

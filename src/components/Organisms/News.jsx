@@ -4,11 +4,7 @@ import { NewsButton } from "../Atoms/Button/NewsButton";
 
 export const News = () => {
   return (
-    <>
-      <div>
-        <h1>News</h1>
-      </div>
-
+    <div className="m-auto w-3/5">
       <div className="col-12">
         <dl className="flex border-b-2 m-2">
           <span className="p-2 font-bold">2023/ 7/18</span>
@@ -34,6 +30,6 @@ export const News = () => {
           <a href="#">休暇いたします！</a>
         </dl>
       </div>
-    </>
+    </div>
   );
 };

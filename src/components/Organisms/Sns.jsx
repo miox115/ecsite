@@ -35,11 +35,7 @@ export const Sns = () => {
 
   return (
     <>
-      <div>
-        <h1>Sns</h1>
-      </div>
-
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-4 text-justify">
         {sns.map((sns) => (
           <div key={sns.id} className="m-2">
             <TwitterTweetEmbed tweetId={sns.tweetId} />
