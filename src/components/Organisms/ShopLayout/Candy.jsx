@@ -19,7 +19,6 @@ export const Candy = () => {
       price: "￥１５０",
       taste: "チョコ",
     },
-    // More products...
   ];
 
   return (

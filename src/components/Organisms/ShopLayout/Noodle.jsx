@@ -37,7 +37,6 @@ export const Noodle = () => {
       price: "￥５００",
       taste: "鳥肉",
     },
-    // More products...
   ];
 
   return (

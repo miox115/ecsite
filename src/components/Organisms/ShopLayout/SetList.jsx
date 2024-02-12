@@ -1,63 +1,41 @@
-
 import SetImg from "../../../img/img/set.jpg";
+
+const Sets = [
+  {
+    id: 1,
+    src: SetImg,
+    alt: "Setport1",
+    name: "SetPart1",
+  },
+  {
+    id: 2,
+    src: SetImg,
+    alt: "Setport2",
+    name: "SetPart2",
+  },
+  {
+    id: 3,
+    src: SetImg,
+    alt: "Setport3",
+    name: "SetPart3",
+  },
+];
 
 export const SetList = () => {
   return (
-    <div className="flex">
-      <div class="bg-white">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div class="group relative">
-              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={SetImg}
-                  alt="Front of men&#039;s Basic Tee in black."
-                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
+    <div className="flex justify-center">
+      {Sets.map((Part) => {
+        return (
+          <>
+            <div class="p-4 text-center">
+              <img src={Part.src} alt={Part.alt} />
               <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                Setpart1
+                {Part.name}
               </h2>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-white">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div class="group relative">
-              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={SetImg}
-                  alt="Front of men&#039;s Basic Tee in black."
-                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
-              <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                Setpart2
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bg-white">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-            <div class="group relative">
-              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={SetImg}
-                  alt="Front of men&#039;s Basic Tee in black."
-                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
-              <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                Setpart3
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
+          </>
+        );
+      })}
     </div>
   );
 };
