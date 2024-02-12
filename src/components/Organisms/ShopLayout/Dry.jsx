@@ -1,4 +1,3 @@
-import React from "react";
 
 export const Dry = () => {
   const products = [

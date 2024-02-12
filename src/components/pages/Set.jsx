@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Header } from "../Organisms/Header";
 import { Manual } from "../Organisms/SetLayout/Manual";
 import { Byu } from "../Organisms/SetLayout/Byu";
@@ -13,18 +11,23 @@ export const Set = () => {
   return (
     <div className="container">
       <Header />
+      <div className="flex">
+        <div className="w-4/5">
+          <Manual />
 
-      <Manual />
+          <Picky />
 
-      <Byu />
+          <Sns />
 
-      <Picky />
+          <Question />
 
-      <Sns />
+          <Voice />
+        </div>
 
-      <Question />
-
-      <Voice />
+        <div className="w-1/5">
+          <Byu />
+        </div>
+      </div>
 
       <Footer />
     </div>

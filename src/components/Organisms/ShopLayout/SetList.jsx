@@ -1,4 +1,4 @@
-import React from "react";
+
 import SetImg from "../../../img/img/set.jpg";
 
 export const SetList = () => {

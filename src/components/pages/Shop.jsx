@@ -1,4 +1,3 @@
-import React from "react";
 
 import { Header } from "../Organisms/Header";
 import { ShopList } from "../Organisms/ShopLayout/ShopList";

@@ -1,4 +1,3 @@
-import React from "react";
 
 const lists = ["食", "菓", "麺", "乾", "詰"];
 

@@ -1,7 +1,5 @@
-import React from "react";
 
 import MacronImg from "../../../img/img/macron.jpg";
-// import PrimaryButton from "../Atoms/Button/PrimaryButton"
 
 export const Manual = () => {
   return (

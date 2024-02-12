@@ -1,4 +1,3 @@
-import React from "react";
 
 import { Header } from "../Organisms/Header";
 import { HomeMain } from "../Organisms/HomeLayout/HomeMain";

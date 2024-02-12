@@ -1,4 +1,3 @@
-import React from "react";
 
 import { LoginButton } from "../Atoms/Button/LoginButton";
 import { Header } from "../Organisms/Header";

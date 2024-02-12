@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Question = () => {
   return (
     <div>
@@ -8,7 +6,29 @@ export const Question = () => {
 
       <div className="pt-4">
         <dl className="border-y-2 border-black">
-          <dd>効率的な食べ方は？</dd>
+          <dd>
+            <summary>効率的な食べ方は？</summary>
+          </dd>
+          <dt className="flex hover:inline-flex">
+            食と一緒に食べることで一日分の栄養が取れます。
+          </dt>
+        </dl>
+      </div>
+      <div className="pt-4">
+        <dl className="border-y-2 border-black">
+          <dd>
+            <summary>効率的な食べ方は？</summary>
+          </dd>
+          <dt className="flex hover:inline-flex">
+            食と一緒に食べることで一日分の栄養が取れます。
+          </dt>
+        </dl>
+      </div>
+      <div className="pt-4">
+        <dl className="border-y-2 border-black">
+          <dd>
+            <summary>効率的な食べ方は？</summary>
+          </dd>
           <dt className="flex hover:inline-flex">
             食と一緒に食べることで一日分の栄養が取れます。
           </dt>
