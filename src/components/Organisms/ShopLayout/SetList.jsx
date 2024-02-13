@@ -23,19 +23,34 @@ const Sets = [
 
 export const SetList = () => {
   return (
-    <div className="flex justify-center">
-      {Sets.map((Part) => {
-        return (
-          <>
-            <div class="p-4 text-center">
-              <img src={Part.src} alt={Part.alt} />
-              <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-                {Part.name}
-              </h2>
-            </div>
-          </>
-        );
-      })}
-    </div>
+    <>
+      <div className="bg-white">
+        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
+            {Sets.map((set) => (
+              <div key={set.id} className="group relative">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                  <img
+                    src={set.src}
+                    alt={set.alt}
+                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                  />
+                </div>
+                <div className="mt-4 flex justify-between">
+                  <div>
+                    <h3 className="text-sm text-gray-700">
+                      <a href="#">
+                        <span aria-hidden="true" className="absolute inset-0" />
+                        {set.name}
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
