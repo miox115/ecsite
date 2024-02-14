@@ -1,8 +1,22 @@
-
+import { useState } from "react";
 import { LoginButton } from "../Atoms/Button/LoginButton";
 import { Header } from "../Organisms/Header";
+import { useAuth } from "../hooks/UseAuth";
 
 export const Login = () => {
+  const { login } = useAuth();
+
+  const onClickLogin = () => {
+    login(userId);
+    //カスタムフックから取得したloginとTextBoxに入力したuserIdを引数にすることでIdが一致したときに画面の遷移ができるようになる。
+  };
+
+  const [userId, setUserId] = useState("");
+
+  const onChangeUserId = (e) => {
+    return setUserId(e.target.value);
+  };
+
   return (
     <>
       <Header />
@@ -46,10 +60,12 @@ export const Login = () => {
               </div>
               <div className="mt-2">
                 <input
-                  id="password"
+                  id={userId}
                   name="password"
                   type="password"
                   autoComplete="current-password"
+                  onClick={onClickLogin}
+                  onChange={onChangeUserId}
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />

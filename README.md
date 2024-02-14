@@ -17,7 +17,7 @@
 
  お菓子のECサイト
 
- - URL ``` ```
+ - URL ```https://ec-project-13cd2.web.app/```
 
 ### プロフェクトの説明
 
@@ -29,6 +29,10 @@
  - react-useState　ボタン機能を実装
  - react-useContext　propsの受渡しを実装
 
+ - react-useCallback 無駄なレンダリングを防ぐため、カスタムフックのuseAuthに実装
+ - react-useNavigate ログイン時にページの遷移の実装
+
+ - Custom Hook login機能を実装するため、カスタムフックの作成
 
 ## 2.環境開発
 
@@ -56,109 +60,64 @@
 
 コマンド tree /F により取得
 
-.
 │  App.js
-
 │  index.js
-
-│
-
+│  
 ├─components
-
 │  ├─Atoms
-
 │  │  └─Button
-
+│  │          LoginButton.jsx
 │  │          NewsButton.jsx
-
 │  │          PrimaryButton.jsx
-
 │  │          RequestButton.jsx
-
 │  │
-
+│  ├─hooks
+│  │      useAuth.ts(ログイン用のカスタムフック)
+│  │
 │  ├─Organisms
-
 │  │  │  Footer.jsx
-
 │  │  │  Header.jsx
-
 │  │  │  Information.jsx
-
 │  │  │  News.jsx
-
 │  │  │  Sns.jsx
-
 │  │  │
-
+│  │  ├─CartLayout
 │  │  ├─HomeLayout
-
 │  │  │      FirstPromote.jsx
-
 │  │  │      HomeMain.jsx
-
 │  │  │      SecondPromote.jsx
-
 │  │  │      Support.jsx
-
 │  │  │
-
-│  │  ├─ShopLayout
-
-│  │  │      Candy.jsx
-
-│  │  │      Dry.jsx
-
-│  │  │      Food.jsx
-
-│  │  │      Noodle.jsx
-
-│  │  │      SetList.jsx
-
-│  │  │      ShopList.jsx
-
+│  │  ├─SetLayout
+│  │  │      Byu.jsx
+│  │  │      Manual.jsx
+│  │  │      Picky.jsx
+│  │  │      Question.jsx
+│  │  │      Voice.jsx
 │  │  │
-
-│  │  └─SetLayout
-
-│  │          Manual.jsx
-
-│  │          Manual1.jsx
-
-│  │          Question.jsx
-
-│  │          Voice.jsx
-
+│  │  └─ShopLayout
+│  │          Candy.jsx
+│  │          Dry.jsx
+│  │          Food.jsx
+│  │          Noodle.jsx
+│  │          SetList.jsx
+│  │          ShopList.jsx
 │  │
-
 │  ├─pages
-
+│  │      Cart.jsx
 │  │      Home.jsx(商品の説明やニュースを表示するページ)
-
 │  │      Login.jsx(ログインページ)
-
 │  │      Page404.jsx(Errorページ)
-
 │  │      Set.jsx(商品の一覧を表示するページ)
-
 │  │      Shop.jsx(ログイン後の会員者向けのページ)
-
 │  │
-
 │  └─router
-
 │          Router.jsx(ルーティングの設定)
-
 │
-
 ├─css
-
 │      input.css
-
 │      output.css
-
 │
-
 └─img
 
 ## 4.使い方

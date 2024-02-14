@@ -1,5 +1,5 @@
-
-export const LoginButton = () => {
+export const LoginButton = (props) => {
+  const { onClick } = props;
   return (
     <div className="m-1">
       <button
@@ -11,6 +11,7 @@ export const LoginButton = () => {
                     py-2
                     px-4
                     rounded"
+        onClick={onClick}
       >
         Button
       </button>
