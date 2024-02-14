@@ -72,7 +72,7 @@
 │  │          RequestButton.jsx
 │  │
 │  ├─hooks
-│  │      useAuth.ts(ログイン用のカスタムフック)
+│  │      useAuth.js(ログイン用のカスタムフック)
 │  │
 │  ├─Organisms
 │  │  │  Footer.jsx
@@ -104,7 +104,7 @@
 │  │          ShopList.jsx
 │  │
 │  ├─pages
-│  │      Cart.jsx
+│  │      Cart.jsx(ログイン後のページ)
 │  │      Home.jsx(商品の説明やニュースを表示するページ)
 │  │      Login.jsx(ログインページ)
 │  │      Page404.jsx(Errorページ)
