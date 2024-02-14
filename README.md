@@ -25,9 +25,10 @@
 
  Racetの機能
  
- - react-router　login機能を実装
- - react-useState　ボタン機能を実装
- - react-useContext　propsの受渡しを実装
+ - react-router  login機能を実装
+ - react-useState  ボタン機能を実装
+ - react-useEffect  APIの取得を最低限にするため実装
+ - react-useContext  propsの受渡しを実装
 
  - react-useCallback 無駄なレンダリングを防ぐため、カスタムフックのuseAuthに実装
  - react-useNavigate ログイン時にページの遷移の実装
@@ -54,71 +55,137 @@
 | react-icons            | X.5.4      |
 | react-player           | X.5.4      |
 | react-twitter-embed    | X.5.4      |
+| axios                  | X.5.4      |
 
 
 ## 3.ディレクトリ構成
 
 コマンド tree /F により取得
 
-│  App.js
-│  index.js
-│  
-├─components
-│  ├─Atoms
-│  │  └─Button
-│  │          LoginButton.jsx
-│  │          NewsButton.jsx
-│  │          PrimaryButton.jsx
-│  │          RequestButton.jsx
-│  │
-│  ├─hooks
-│  │      useAuth.js(ログイン用のカスタムフック)
-│  │
-│  ├─Organisms
-│  │  │  Footer.jsx
-│  │  │  Header.jsx
-│  │  │  Information.jsx
-│  │  │  News.jsx
-│  │  │  Sns.jsx
-│  │  │
-│  │  ├─CartLayout
-│  │  ├─HomeLayout
-│  │  │      FirstPromote.jsx
-│  │  │      HomeMain.jsx
-│  │  │      SecondPromote.jsx
-│  │  │      Support.jsx
-│  │  │
-│  │  ├─SetLayout
-│  │  │      Byu.jsx
-│  │  │      Manual.jsx
-│  │  │      Picky.jsx
-│  │  │      Question.jsx
-│  │  │      Voice.jsx
-│  │  │
-│  │  └─ShopLayout
-│  │          Candy.jsx
-│  │          Dry.jsx
-│  │          Food.jsx
-│  │          Noodle.jsx
-│  │          SetList.jsx
-│  │          ShopList.jsx
-│  │
-│  ├─pages
-│  │      Cart.jsx(ログイン後のページ)
-│  │      Home.jsx(商品の説明やニュースを表示するページ)
-│  │      Login.jsx(ログインページ)
-│  │      Page404.jsx(Errorページ)
-│  │      Set.jsx(商品の一覧を表示するページ)
-│  │      Shop.jsx(ログイン後の会員者向けのページ)
-│  │
-│  └─router
-│          Router.jsx(ルーティングの設定)
-│
-├─css
-│      input.css
-│      output.css
-│
-└─img
+ │  App.js
+
+    │  index.js
+
+    │
+
+    ├─components
+
+    │  ├─Atoms
+
+    │  │  ├─Button
+
+    │  │  │      LoginButton.jsx
+
+    │  │  │      NewsButton.jsx
+
+    │  │  │      PrimaryButton.jsx
+
+    │  │  │      RequestButton.jsx
+
+    │  │  │
+
+    │  │  └─PagiNation
+
+    │  │          PagiNation.jsx
+
+    │  │
+
+    │  ├─hooks
+
+    │  │      UseAuth.js(ログイン用のカスタムフック)
+
+    │  │
+
+    │  ├─Organisms
+
+    │  │  │  Footer.jsx
+
+    │  │  │  Header.jsx
+
+    │  │  │  Information.jsx
+
+    │  │  │  News.jsx
+
+    │  │  │  Sns.jsx
+
+    │  │  │
+
+    │  │  ├─CartLayout
+
+    │  │  ├─HomeLayout
+
+    │  │  │      FirstPromote.jsx
+
+    │  │  │      HomeMain.jsx
+
+    │  │  │      SecondPromote.jsx
+
+    │  │  │      Support.jsx
+
+    │  │  │
+
+    │  │  ├─SetLayout
+
+    │  │  │      Byu.jsx
+
+    │  │  │      Manual.jsx
+
+    │  │  │      Picky.jsx
+
+    │  │  │      Question.jsx
+
+    │  │  │      Voice.jsx
+
+    │  │  │
+
+    │  │  └─ShopLayout
+
+    │  │      Cart.jsx(ログイン後のページ)
+
+    │  │      Home.jsx(商品の説明やニュースを表示するページ)
+
+    │  │      Login.jsx(ログインページ)
+
+    │  │      Page404.jsx(Errorページ) 
+
+    │  │      Set.jsx(商品の一覧を表示するページ)
+
+    │  │      Shop.jsx(ログイン後の会員者向けのページ)
+
+    │  │
+
+    │  ├─pages
+
+    │  │      Cart.jsx
+
+    │  │      Home.jsx
+
+    │  │      Login.jsx
+
+    │  │      Page404.jsx
+
+    │  │      Set.jsx
+
+    │  │      Shop.jsx
+
+    │  │
+
+    │  └─router
+
+    │          Router.jsx
+
+    │
+
+    ├─css(tailwind.cssを実装)
+
+    │      input.css
+
+    │      output.css
+
+    │
+
+    └─img
+
 
 ## 4.使い方
 
