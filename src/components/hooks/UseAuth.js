@@ -5,7 +5,7 @@ export const useAuth = () => {
   const navigate = useNavigate();
 
   const login = useCallback((id) => {
-    if ((id === 1)) {
+    if ((id === "")) {
       navigate("/Cart");
     } else {
       alert("ユーザーが見つかりません");
