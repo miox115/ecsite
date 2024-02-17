@@ -1,7 +1,7 @@
 import { useContext } from "react";
 
-import { LoginContext } from "../Context/LoginProvider";
+import { LoginContext } from "../Organisms/CartLayout/LoginProvider";
 
 export const UseLoginContext = () => {
-  useContext(LoginContext);
+  return useContext(LoginContext);
 };

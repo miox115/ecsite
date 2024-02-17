@@ -6,13 +6,13 @@ import { Shop } from "../pages/Shop";
 import { Page404 } from "../pages/Page404";
 import { Login } from "../pages/Login";
 import { Cart } from "../pages/Cart";
-import { LoginContext } from "../Context/LoginContext";
+import { LoginProvider } from "../Organisms/CartLayout/LoginProvider";
 
 export const Router = () => {
   return (
     <>
       <BrowserRouter>
-        <LoginContext>
+        <LoginProvider>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/Set" element={<Set />} />
@@ -21,7 +21,7 @@ export const Router = () => {
             <Route path="/Cart" element={<Cart />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
-        </LoginContext>
+        </LoginProvider>
       </BrowserRouter>
     </>
   );
