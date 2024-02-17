@@ -28,12 +28,14 @@
  - react-router  login機能を実装
  - react-useState  ボタン機能を実装
  - react-useEffect  APIの取得を最低限にするため実装
- - react-useContext  ログインの管理を行いその情報を受渡しするため実装(Context Providerを使用)
+ - react-useContext  ログインの管理を行いその情報を受渡しするため実装
 
  - react-useCallback 無駄なレンダリングを防ぐため、カスタムフックのuseAuthに実装
  - react-useNavigate ログイン時にページの遷移の実装
 
- - Custom Hook login機能を実装するため、カスタムフックの作成
+ - Custom Hook login機能を実装するため、UseAuthの作成
+ - Custom Hook useContextを容易に利用するためのカスタムフックでUseLoginContextの作成
+
 
 ## 2.環境開発
 
