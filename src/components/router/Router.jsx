@@ -7,9 +7,13 @@ import { Page404 } from "../pages/Page404";
 import { Login } from "../pages/Login";
 import { Cart } from "../pages/Cart";
 import { LoginProvider } from "../Organisms/CartLayout/LoginProvider";
+import { UseLoginContext } from "../hooks/UseLoginContext";
 
-export const Router = (props) => {
-  const { isAd } = props;
+export const Router = () => {
+  const { loginUser } = UseLoginContext;
+
+  const isAd = loginUser?.isAd;
+
   return (
     <>
       <BrowserRouter>
