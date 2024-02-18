@@ -9,8 +9,11 @@ export const useAuth = () => {
   const login = useCallback(
     (id) => {
       if (id === "1") {
-        setLoginUser(id);
+        const isAd = id === "1" ? true : false;
+        // ログイン者だけ閲覧できるようにtrue,falseの判定をしている
+        setLoginUser({ ...id, isAd });
         navigate("/Cart");
+        console.log(isAd);
       } else {
         alert("ユーザーが見つかりません");
       }
