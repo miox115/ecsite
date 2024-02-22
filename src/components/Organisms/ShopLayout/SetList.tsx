@@ -4,19 +4,19 @@ const Sets = [
   {
     id: 1,
     src: SetImg,
-    alt: "Setport1",
+    alt: "Set1",
     name: "SetPart1",
   },
   {
     id: 2,
     src: SetImg,
-    alt: "Setport2",
+    alt: "Set2",
     name: "SetPart2",
   },
   {
     id: 3,
     src: SetImg,
-    alt: "Setport3",
+    alt: "Set3",
     name: "SetPart3",
   },
 ];
@@ -42,7 +42,7 @@ export const SetList = () => {
               <div className="mt-4 flex justify-between">
                 <div>
                   <h3 className="text-sm text-gray-700">
-                    <a href="#">
+                    <a href="/Set">
                       <span aria-hidden="true" className="absolute inset-0" />
                       {set.name}
                     </a>

@@ -1,4 +1,10 @@
-export const RequestButton = (props) => {
+import { FC } from "react";
+
+type Props = {
+  Children: React.ReactNode;
+};
+
+export const RequestButton: FC<Props> = (props) => {
   return (
     <div className="m-1">
       <button

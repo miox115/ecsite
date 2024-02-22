@@ -1,4 +1,3 @@
-
 import MacronImg from "../../../img/img/macron.jpg";
 
 export const Manual = () => {

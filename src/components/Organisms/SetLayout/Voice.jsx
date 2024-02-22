@@ -23,8 +23,10 @@ export const Voice = () => {
 
   return (
     <div className="pt-10">
-       <h2 className="text-sm text-amber-300 py-2">口コミ</h2>
-      <h1 className="text-2xl border-b-4 border-yellow-500 pb-2">いろんな意見をいただいています。</h1>
+      <h2 className="text-sm text-amber-300 py-2">口コミ</h2>
+      <h1 className="text-2xl border-b-4 border-yellow-500 pb-2">
+        いろんな意見をいただいています。
+      </h1>
 
       {data.map((datas) => {
         return (

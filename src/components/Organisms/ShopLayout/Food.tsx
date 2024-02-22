@@ -1,50 +1,40 @@
-
-export const Noodle = () => {
+export const Food = () => {
   const products = [
     {
       id: 1,
-      name: "Noodle",
+      name: "Food",
       href: "#",
       imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "麺",
-      price: "￥５００",
-      taste: "野菜",
+      imageAlt: "食事",
+      price: "￥２５０",
+      taste: "プレーン",
     },
     {
       id: 2,
-      name: "Noodle",
+      name: "Food",
       href: "#",
       imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "麺",
-      price: "￥５００",
-      taste: "魚介",
+      imageAlt: "食事",
+      price: "￥２５０",
+      taste: "バター",
     },
     {
       id: 3,
-      name: "Noodle",
+      name: "Food",
       href: "#",
       imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "麺",
-      price: "￥５００",
-      taste: "豚肉",
-    },
-    {
-      id: 3,
-      name: "Noodle",
-      href: "#",
-      imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "麺",
-      price: "￥５００",
-      taste: "鳥肉",
+      imageAlt: "食事",
+      price: "￥２５０",
+      taste: "ソルト",
     },
   ];
 
   return (
     <div>
       <div className="bg-white">
-        <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
+        <div className="m-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            乾
+            食
           </h2>
 
           <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-6">

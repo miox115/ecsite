@@ -1,5 +1,10 @@
+import { FC } from "react";
 
-export const PrimaryButton = (props) => {
+type Props = {
+  onClick: any;
+};
+
+export const PrimaryButton: FC<Props> = (props) => {
   const { onClick } = props;
   return (
     <div className="m-1 py-8">
@@ -10,8 +15,7 @@ export const PrimaryButton = (props) => {
                     font-bold
                     rounded-full 
                     py-2
-                    px-4
-                    rounded"
+                    px-4"
         onClick={onClick}
       >
         Button

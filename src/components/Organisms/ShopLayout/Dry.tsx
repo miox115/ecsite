@@ -1,4 +1,3 @@
-
 export const Dry = () => {
   const products = [
     {
@@ -19,7 +18,6 @@ export const Dry = () => {
       price: "￥２００",
       taste: "メロン",
     },
-    // More products...
   ];
 
   return (

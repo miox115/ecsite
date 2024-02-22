@@ -19,7 +19,7 @@ export const Router = () => {
       <LoginProvider>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Set" element={<Set />} />
             <Route path="/Shop" element={<Shop />} />
             <Route path="/Login" element={<Login />} />

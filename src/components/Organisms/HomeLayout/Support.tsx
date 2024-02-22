@@ -1,4 +1,3 @@
-
 import { PrimaryButton } from "../../Atoms/Button/PrimaryButton";
 import { useNavigate } from "react-router-dom";
 import Doctor from "../../../img/img/doctor.jpg";

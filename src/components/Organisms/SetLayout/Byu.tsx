@@ -14,8 +14,8 @@ export const Byu = () => {
       </div>
       <div className="box-content">ポイントの事前購入でお得です。</div>
 
-      <PrimaryButton />
-      <PrimaryButton />
+      <PrimaryButton onClick={undefined} />
+      <PrimaryButton onClick={undefined} />
     </div>
   );
 };

@@ -3,6 +3,10 @@ import { LoginButton } from "../Atoms/Button/LoginButton";
 import { Header } from "../Organisms/Header";
 import { useAuth } from "../hooks/UseAuth";
 
+type User = {
+  id: number;
+};
+
 export const Login = () => {
   const { login } = useAuth();
 
@@ -11,7 +15,7 @@ export const Login = () => {
     //カスタムフックから取得したloginとTextBoxに入力したuserIdを引数にすることでIdが一致したときに画面の遷移ができるようになる。
   };
 
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState<User>("");
 
   const onChangeUserId = (e) => {
     return setUserId(e.target.value);

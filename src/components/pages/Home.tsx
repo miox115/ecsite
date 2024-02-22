@@ -1,4 +1,3 @@
-
 import { Header } from "../Organisms/Header";
 import { HomeMain } from "../Organisms/HomeLayout/HomeMain";
 import { Information } from "../Organisms/Information";

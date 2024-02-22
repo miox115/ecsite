@@ -1,4 +1,3 @@
-
 import { Header } from "../Organisms/Header";
 import { ShopList } from "../Organisms/ShopLayout/ShopList";
 import { Information } from "../Organisms/Information";
@@ -11,7 +10,7 @@ import { Footer } from "../Organisms/Footer";
 
 export const Shop = () => {
   return (
-    <div>
+    <>
       <Header />
 
       <ShopList />
@@ -29,6 +28,6 @@ export const Shop = () => {
       <Dry />
 
       <Footer />
-    </div>
+    </>
   );
 };

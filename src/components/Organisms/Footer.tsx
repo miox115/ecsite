@@ -10,10 +10,10 @@ export const Footer = () => {
       <div className="flex justify-center m-4">
         <div className="justify-center">
           <div className="mx-4 text-center">
-            <a href="#" className="text-5xl">
+            <a href="/Footer" className="text-5xl">
               <SiOdysee className="m-auto"/>
             </a>
-            <p className="text-xl">miox,inc.</p>
+            <p className="text-xl">Miox.inc</p>
           </div>
           <div className="flex m-4">
             <h3 className="p-2 text-5xl">
@@ -28,36 +28,36 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div classNama="ml-8">
+        <div className="ml-8">
           <li className="p-2 list-none">
-            <a href="#">会社情報</a>
+            <a href="/Footer">会社情報</a>
           </li>
           <li className="p-2 list-none">
-            <a href="#">会社概要</a>
+            <a href="/Footer">会社概要</a>
           </li>
           <li className="p-2 list-none">
-            <a href="#">製造</a>
+            <a href="/Footer">製造</a>
           </li>
           <li className="p-2 list-none">
-            <a href="#">取材</a>
+            <a href="/Footer">取材</a>
           </li>
         </div>
 
         <div className="ml-8">
           <li className="p-2 list-none">
-            <a href="#">IR</a>
+            <a href="/Footer">IR</a>
           </li>
           <li className="p-2 list-none">
-            <a href="#">トップ</a>
+            <a href="/Footer">トップ</a>
           </li>
           <li className="p-2 list-none">
-            <a href="#">ニュース</a>
+            <a href="/Footer">ニュース</a>
           </li>
         </div>
       </div>
 
       <div className="m-4">
-        <p className="flex justify-center">miox,inc</p>
+        <p className="flex justify-center">Miox.inc</p>
       </div>
     </footer>
   );

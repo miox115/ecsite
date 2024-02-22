@@ -1,17 +1,17 @@
-import { useCallback } from "react";
+import { useCallback, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { LoginProvider } from "../Organisms/CartLayout/LoginProvider";
+import { LoginContext } from "../Organisms/CartLayout/LoginProvider";
 
 export const useAuth = () => {
   const navigate = useNavigate();
-  const { setLoginUser } = LoginProvider();
+  const { setLoginUser } = useContext(LoginContext);
 
   const login = useCallback(
-    (id) => {
-      if (id === "1") {
-        const isAd = id === "1" ? true : false;
+    (id: number) => {
+      if (id === 1) {
+        const isAd = id === 1 ? true : false;
         // ログイン者だけ閲覧できるようにtrue,falseの判定をしている
-        setLoginUser({ id, isAd })
+        setLoginUser({ isAd });
         navigate("/Cart");
       } else {
         alert("ユーザーが見つかりません");

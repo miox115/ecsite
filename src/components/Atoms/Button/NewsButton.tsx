@@ -1,5 +1,10 @@
+import { FC } from "react";
 
-export const NewsButton = (props) => {
+type Props = {
+  title: string;
+};
+
+export const NewsButton: FC<Props> = (props) => {
   return (
     <div className="m-1">
       <button
@@ -9,8 +14,7 @@ export const NewsButton = (props) => {
                     text-sm 
                     rounded-full 
                     px-2 
-                    py-1
-                    rounded"
+                    py-1"
       >
         {props.title}
       </button>

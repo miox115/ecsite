@@ -1,4 +1,3 @@
-
 import ReactPlayer from "react-player";
 import video from "../../img/move/info_video.mp4";
 

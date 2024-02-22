@@ -1,4 +1,10 @@
-export const LoginButton = (props) => {
+import { FC } from "react";
+
+type Props = {
+  onClick: any;
+};
+
+export const LoginButton: FC<Props> = (props) => {
   const { onClick } = props;
   return (
     <div className="m-1">
@@ -9,8 +15,7 @@ export const LoginButton = (props) => {
                     font-bold
                     rounded-full 
                     py-2
-                    px-4
-                    rounded"
+                    px-4"
         onClick={onClick}
       >
         Button

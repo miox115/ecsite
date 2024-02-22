@@ -1,4 +1,3 @@
-
 import { TwitterTweetEmbed } from "react-twitter-embed";
 
 export const Sns = () => {

@@ -37,10 +37,10 @@ export const ShopList = () => {
     <>
       <p>商品一覧表</p>
 
-      <wrapper className="grid grid-cols-2">
+      <div className="grid grid-cols-2">
         {lists.map((list) => {
           return (
-            <a href="#">
+            <a href="/Shop">
               <span className="flex bg-slate-200 text-2xl w-84 h-8 m-2 rounded-md">
                 {list.icon}
                 {list.name}
@@ -48,7 +48,7 @@ export const ShopList = () => {
             </a>
           );
         })}
-      </wrapper>
+      </div>
     </>
   );
 };

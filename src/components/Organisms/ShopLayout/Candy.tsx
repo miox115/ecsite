@@ -1,41 +1,31 @@
-
-export const Food = () => {
+export const Candy = () => {
   const products = [
     {
       id: 1,
-      name: "Food",
+      name: "Candy",
       href: "#",
       imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "食事",
-      price: "￥２５０",
-      taste: "プレーン",
+      imageAlt: "お菓子",
+      price: "￥１５０",
+      taste: "クリーム",
     },
     {
       id: 2,
-      name: "Food",
+      name: "Candy",
       href: "#",
       imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "食事",
-      price: "￥２５０",
-      taste: "バター",
-    },
-    {
-      id: 3,
-      name: "Food",
-      href: "#",
-      imageSrc: "https://dummyimage.com/400x500/000/fff",
-      imageAlt: "食事",
-      price: "￥２５０",
-      taste: "ソルト",
+      imageAlt: "お菓子",
+      price: "￥１５０",
+      taste: "チョコ",
     },
   ];
 
   return (
     <div>
       <div className="bg-white">
-        <div className="m-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
+        <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
           <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-            食
+            菓
           </h2>
 
           <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-6">
