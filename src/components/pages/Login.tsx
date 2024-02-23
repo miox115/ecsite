@@ -3,21 +3,17 @@ import { LoginButton } from "../Atoms/Button/LoginButton";
 import { Header } from "../Organisms/Header";
 import { useAuth } from "../hooks/UseAuth";
 
-type User = {
-  id: number;
-};
-
 export const Login = () => {
   const { login } = useAuth();
 
-  const onClickLogin = () => {
+  const onClickLogin = (userId: number) => {
     login(userId);
     //カスタムフックから取得したloginとTextBoxに入力したuserIdを引数にすることでIdが一致したときに画面の遷移ができるようになる。
   };
 
-  const [userId, setUserId] = useState<User>("");
+  const [userId, setUserId] = useState<number>(0);
 
-  const onChangeUserId = (e) => {
+  const onChangeUserId = (e: any) => {
     return setUserId(e.target.value);
   };
 
@@ -64,7 +60,7 @@ export const Login = () => {
               </div>
               <div className="mt-2">
                 <input
-                  id={userId}
+                  id="password"
                   name="password"
                   type="password"
                   autoComplete="current-password"
