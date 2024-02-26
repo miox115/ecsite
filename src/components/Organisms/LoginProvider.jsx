@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
-export const LoginContext = createContext(null);
+export const LoginContext = createContext({});
 
 export const LoginProvider = ({ children }) => {
-  const [loginUser, setLoginUser] = useState({ isAd: false });
+  const [loginUser, setLoginUser] = useState(null);
 
   return (
     <LoginContext.Provider value={{ loginUser, setLoginUser }}>

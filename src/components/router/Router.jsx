@@ -6,14 +6,9 @@ import { Shop } from "../pages/Shop";
 import { Page404 } from "../pages/Page404";
 import { Login } from "../pages/Login";
 import { Cart } from "../pages/Cart";
-import {
-  LoginContext,
-  LoginProvider,
-} from "../Organisms/CartLayout/LoginProvider";
-import { useContext } from "react";
+import { LoginProvider } from "../Organisms/LoginProvider";
 
 export const Router = () => {
-  const { loginUser } = useContext(LoginContext);
   return (
     <>
       <LoginProvider>
